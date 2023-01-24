@@ -176,13 +176,26 @@ footer ul{
     display: flex;
     justify-content: flex-end;
     list-style: none;
+    gap: 20px;
 }
 
-.facebook{
+footer a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.facebook a{
     background-image: url("../images/facebook-nb1.jpg");
 }
-.twitter{
+.twitter a{
     background-image: url("../images/twitter-nb1.jpg");
+}
+.linkedin a{
+    background-image: url("../images/linkedin-nb1.jpg");
+}
+.pinterest a{
+    background-image: url("../images/pinterest-nb1.jpg");
 }
 
 
