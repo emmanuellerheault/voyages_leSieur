@@ -1,0 +1,194 @@
+/*--------------------------------------------------------------------------------
+RESET
+--------------------------------------------------------------------------------*/
+
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit; /* permet de ne pas faire le calcul du padding */
+}
+
+/*--------------------------------------------------------------------------------
+BASE
+--------------------------------------------------------------------------------*/
+
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------------------------
+MISE EN PAGE
+--------------------------------------------------------------------------------*/
+
+.wrapper{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/*--------------------------------------------------------------------------------
+MODULES
+--------------------------------------------------------------------------------*/
+
+/* ------------------Header---------------- */
+header{
+    background-color: #f26c25;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .wrapper{
+    display:flex;
+    justify-content: space-between; /* axe horizontal */
+    align-items: center; /* axe vertical */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* le logo n'est plus stretch car il est aligné*/
+    gap: 10px;       /*header img{
+                         margin-right: 10px;
+                      } */
+}
+
+header h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+
+    margin: 0;
+}
+
+header ul{
+    display: flex; /* rends les ENFANTS flexibles et côte à côte */
+    justify-content: flex-end;
+
+    padding: 0;
+    list-style: none;
+    gap: 40px;
+}
+
+nav a{
+    text-decoration: none; /* assusre qu'il n"y a pas de soulignement hors du hover*/
+    color: white;
+}
+
+nav a:hover{
+    text-decoration: underline; /* sur survol, une ligne apparait en dessous */
+}
+
+/* -----------------Hero------------------ */
+
+.hero {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 200px; /* hauteur de la section hero, pas de padding car le contenu de la section ne change pas*/
+}
+
+.hero h2{
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+/* -----------------Secion de contenu------------------ */
+
+.titre-section{
+    display: flex; /* flex instauré sur le parnt afin que les enfants soit flex*/
+    justify-content: space-between;
+    align-items: center; /* le logo n'est plus stretch car il est aligné (corrigé)*/
+
+    height: 60px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+
+    border: solid 1px #d0d0d0; /* raccourci des 3 valeurs :style ,width, color */
+    background-color: #eeeeee;
+}
+
+.titre-section h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.titre-section img {
+    margin-right: 20px;
+    cursor: pointer; /* permet d'avoir un pointer lorsque que la souris est hover */
+}
+
+.conteneur-transport{ /* parent direct des 3 zones de contenu */
+    display: grid;
+    width: 100%; /* on veut que la grille prenne 100% de la place horizontale */
+    grid-template-columns: 1fr 1fr 1fr; /* permet d'espacer les 3 zones également */
+    gap: 60px;
+}
+
+article h3{
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+
+    margin-bottom: 0;
+}
+
+article p{
+    text-align: center;
+}
+
+/* -----------------Footer--------------------- */
+
+footer{
+    background-color: #171717;
+
+}
+
+footer h4{
+    color: white;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.facebook{
+    background-image: url("../images/facebook-nb1.jpg");
+}
+.twitter{
+    background-image: url("../images/twitter-nb1.jpg");
+}
+
+
+
+
+
+
+
+
